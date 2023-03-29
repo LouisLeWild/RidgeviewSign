@@ -3,12 +3,22 @@ body {font-family: sans-serif;}
 td { border-style: solid;
      border-width: 2px;
      border-color: blue;
-     padding: 4px 4px 2px 4px;
+     padding: 4px 4px 4px 12px;
      font-weight: bold;
+     width: 25px;
 }
 td.depleated { 
     background-color: red;
     color: lightgray;
+}
+
+td.fulfilled {
+    background-color: lightgreen;
+    color: black;
+}
+
+td.justaspace {
+    background-color: gray;
 }
 
 input.signline {
@@ -17,4 +27,9 @@ input.signline {
 
 div.signface {
     padding-top: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div#tablespace {
+    padding-top: 15px;
 }

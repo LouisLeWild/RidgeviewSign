@@ -11,7 +11,11 @@ function submitSign(){
 
     
     
-    $.post("/verify", {"L1": face1[0], "L2": face1[1], "L3": face1[2], "L4": face2[0], "L5": face2[1], "L6": face2[2]}, function(res){ console.log('wee!', res);})
+    $.post("/verify", {"L1": face1[0], "L2": face1[1], "L3": face1[2], "L4": face2[0], "L5": face2[1], "L6": face2[2]}
+    , function(res){ 
+        $('div#tablespace').html(res);
+    }
+    );
 }
 
 function initializePage(){
