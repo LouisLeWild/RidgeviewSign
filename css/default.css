@@ -22,7 +22,7 @@ td.justaspace {
 }
 
 input.signline {
-    width: 500px;
+    width: 250px;
 }
 
 div.signface {
@@ -32,4 +32,8 @@ div.signface {
 
 div#tablespace {
     padding-top: 15px;
+}
+
+span.lencounter {
+    padding-left: 10px;
 }

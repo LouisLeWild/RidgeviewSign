@@ -24,7 +24,7 @@ app.get("/script", (req, res) => {
 });
 
 app.post("/verify", (req, res) => {
-  console.log("L1", [req.body.L1, req.body.L2, req.body.L3], [req.body.L4, req.body.L5, req.body.L6]);
+  
   sign.initSign([[req.body.L1, req.body.L2, req.body.L3], [req.body.L4, req.body.L5, req.body.L6]]);
   let lengthVerify = sign.validateLineLengths();
   let lettersVerify = sign.validateLettersAvailable();
@@ -59,8 +59,6 @@ function rowMake(l){
   
   let leadingSpaces = Math.floor((20 - l.length)/2);
   let trailingspaces = 20 - (leadingSpaces + l.length);
-  console.log("leading", leadingSpaces);
-  console.log("trailing", trailingspaces);
 
   for(let s = 0; s < leadingSpaces; s++){
     let remaining = sign.characterManagerUse(' ');
